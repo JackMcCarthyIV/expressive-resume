@@ -24,7 +24,7 @@ jobs:
         pdflatex -interaction=nonstopmode -halt-on-error -output-directory=output src/your_resume.tex
     
     - name: Upload compiled PDF as artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: resume-pdf
         path: output/your_resume.pdf
